@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config ./webpack.prod.js",
+    "build": "webpack --config ./build/webpack.prod.js",
     "start": "ws --hostname localhost --port 3002 -o -d dist",
-    "dev": "webpack-dev-server --config ./webpack.dev.js"
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js"
   },
   "keywords": [],
   "author": "",

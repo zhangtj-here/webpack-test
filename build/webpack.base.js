@@ -30,12 +30,12 @@ module.exports = {
             chunks: ['other']
         }),
         new CleanWebpackPlugin(),
-        /*new CopyWebpackPlugin([
+        new CopyWebpackPlugin([
          {
-           from: path.join(__dirname, 'assets'),
+           from: path.resolve('assets'),
            to: 'assets'
          }
-        ]),*/
+        ]),
         new Webpack.BannerPlugin('这是练习webpack的代码'),
         new Webpack.ProvidePlugin({
            $: 'jquery',
