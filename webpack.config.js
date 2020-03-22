@@ -16,7 +16,7 @@ module.exports = {
         // 多入口无法对应为一个出口，所以用[name]自动匹配入口名，并自动打包多个js
         filename: '[name].js'
     },
-    mode: 'production', //development
+    mode: 'development', //production
     devServer: {
         contentBase: path.resolve('./dev'),
         open: true,
@@ -43,7 +43,11 @@ module.exports = {
            to: 'assets'
          }
         ]),*/
-        new Webpack.BannerPlugin('这是练习webpack的代码')
+        new Webpack.BannerPlugin('这是练习webpack的代码'),
+        new Webpack.ProvidePlugin({
+           $: 'jquery',
+           jQuery: 'jquery'
+        })
     ],
     module: {
         rules: [
@@ -90,11 +94,19 @@ module.exports = {
             {
                test: /\.(htm|html)$/i,
                loader: 'html-withimg-loader'
-            }
+            },
             // {
             //     test: /\.(jpg|png|bmp|jpeg|gif)/,
             //     loader: 'file-loader'
             // }
+            /*{
+                // 用于解析jquery模块的绝对路径
+                test: require.resolve('jquery'),
+                use: {
+                    loader: 'expose-loader',
+                    options: '$'
+                }
+            }*/
         ]
     },
     devtool: 'cheap-module-eval-source-map'
