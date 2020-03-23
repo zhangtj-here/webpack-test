@@ -7,7 +7,7 @@ module.exports = merge(baseConfig, {
     devServer: {
         // contentBase: path.resolve('./'),
         open: true,
-        hot: true,
+        hot: true, // 开启了热更新 
         port: 3000,
         proxy: {
         	// 当前端请求 /api 地址时，会将请求转发到http://localhost:8080/api
