@@ -3,11 +3,12 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const Webpack = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     // 修改为多入口
     entry: { //'./src/index.js',
-        main: "./src/main.js",
+        index: "./src/index.js",
         other: "./src/other.js"
     },
     output: {
@@ -22,7 +23,7 @@ module.exports = {
         new htmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
-            chunks: ['main','other']
+            chunks: ['index','other']
         }),
         new htmlWebpackPlugin({
             filename: 'other.html',
@@ -40,21 +41,28 @@ module.exports = {
         new Webpack.ProvidePlugin({
            $: 'jquery',
            jQuery: 'jquery'
+        }),
+        new MiniCssExtractPlugin({
+            // placeholders
+            filename: '[name]-[hash:6].css'
         })
     ],
     module: {
         rules: [
             {
                 test: /\.css$/,
-                loader: ['style-loader', 'css-loader']
+                // loader: ['style-loader', 'css-loader']
+                use: [MiniCssExtractPlugin.loader,'css-loader']
             },
             {
                 test: /\.less$/,
-                loader: ['style-loader', 'css-loader', 'less-loader']
+                // loader: ['style-loader', 'css-loader', 'less-loader']
+                loader: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
             },
             {
                 test: /\.s(a|c)ss$/,
-                loader: ['style-loader', 'css-loader', 'sass-loader']
+                // loader: ['style-loader', 'css-loader', 'sass-loader']
+                loader: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(jpg|png|jpeg|bmp|gif)$/,
