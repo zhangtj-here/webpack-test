@@ -27,5 +27,15 @@ console.log(test,test2,IS_DEV)*/
 // let math = require('./math.js') // 动态导入，可以在块级作用域中导入
 
 // console.log(math);
-import {add} from './math.js' // 只能在顶级作用域中导入
-console.log(add(1, 2))
+// import {add} from './math.js' // 只能在顶级作用域中导入
+// console.log(add(1, 2))
+
+// let a = 1
+// let b = 2
+// let c = 3
+// console.log(a + b + c)
+// console.log(a, b, c)
+
+import {a, b, c} from './constant.js'
+// 类似于预执行，将结果推断后放到这里
+console.log(a + b + c)
