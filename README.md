@@ -786,6 +786,8 @@ if (module.hot) {
   由于 scope hoisting 需要分析出模块之间的依赖关系，因此源码必须采用 ES6 模块化语句，不然它将无法生效。
   原因和tree shaking一样。
 
+  new webpack.optimize.ModuleConcatenationPlugin(); //默认使用这个插件进行scope hosting
+
   
 
 - 代码压缩
