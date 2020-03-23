@@ -7,7 +7,7 @@ console.log($, jQuery)
 // console.log(window.$)
 
 import {getUserInfo} from './api/http.js'
-getUserInfo().then(() => {},(error) => {
+getUserInfo().then((result) => {console.log(result)},(error) => {
 	console.log(error)
 })
 

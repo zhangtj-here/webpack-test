@@ -8,7 +8,28 @@ module.exports = merge(baseConfig, {
         // contentBase: path.resolve('./'),
         open: true,
         hot: true,
-        port: 3000
+        port: 3000,
+        proxy: {
+        	// 当前端请求 /api 地址时，会将请求转发到http://localhost:8080/api
+        	// '/api': 'http://localhost:8080'
+        	'/api': {
+        		target: 'http://localhost:8080',
+        		// 转发请求是不会携带 /api
+        		pathRewrite: {
+        			// '^/api': '',
+        			// '/api': '',
+        			// '^/to': '/toto'
+        		}
+        	},
+        	'/to': {
+        		target: 'http://localhost:8080',
+        		// 转发请求是不会携带 /api
+        		pathRewrite: {
+        			'^/to': '/toto'
+        		}
+        	}
+
+        }
     },
     devtool: 'cheap-module-eval-source-map',
     plugins: [

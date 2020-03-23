@@ -3,7 +3,9 @@ if (!IS_DEV) {
 	host = "http://www.itheima.com"
 }
 
-let url = host + '/api/v1/getUserInfo'
+host = ""
+
+let url = host + '/api/getUserInfo'
 
 import axios from 'axios'
 
