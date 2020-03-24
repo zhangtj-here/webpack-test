@@ -8,7 +8,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
     // optimization: {
     //     splitChunks: {
-    //         chunks: 'all'
+    //         chunks: 'all' //默认值: async
     //     }
     // },
     // 修改为多入口
