@@ -15,7 +15,12 @@ module.exports = {
         path: path.resolve("./dist"),
         // filename: 'main.js'
         // 多入口无法对应为一个出口，所以用[name]自动匹配入口名，并自动打包多个js
-        filename: '[name].js'
+        filename: '[name].bundle.js'
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
     },
     plugins: [
         // 如果使用了html插件，就得手动使用多入口对应的html文件

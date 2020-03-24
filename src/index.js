@@ -1,8 +1,9 @@
-import './css/index.css';
-import './less/test.less';
-import './scss/test.scss';
+// import './css/index.css';
+// import './less/test.less';
+// import './scss/test.scss';
+import $ from 'jquery'
 // import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import '@babel/polyfill';
+// import '@babel/polyfill';
 
 
 /*var aaa = 123;
@@ -34,17 +35,17 @@ let a = 123;
 console.log(a);*/
 
 
-function *fn() {
-	yield 1
-	yield 2 
-	return 3
-}
+// function *fn() {
+// 	yield 1
+// 	yield 2 
+// 	return 3
+// }
 
-let newFn = fn()
-console.log( newFn.next() )
-console.log( newFn.next() )
-console.log( newFn.next() )
-console.log( newFn.next() )
+// let newFn = fn()
+// console.log( newFn.next() )
+// console.log( newFn.next() )
+// console.log( newFn.next() )
+// console.log( newFn.next() )
 
-let str = "panda123"
-console.log(str.includes('pan'))
+// let str = "panda123"
+// console.log(str.includes('pan'))
