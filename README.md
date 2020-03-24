@@ -1080,6 +1080,8 @@ webpack 会基于如下默认原则自动分割代码：
 
 以下是`SplitChunksPlugin`的默认配置：
 
+下列splitchunks选项cacheGroups之前的规则都匹配符合了，才会进行cacheGroups里的匹配分组，如下的vendors组和default组，如果组都匹配，则看权重，谁的权重高，优先使用谁的
+
 ```js
 module.exports = {
   //...
@@ -1087,7 +1089,7 @@ module.exports = {
     splitChunks: {
       chunks: 'async', // 只对异步加载的模块进行拆分，可选值还有all | initial
       minSize: 30000, // 模块最少大于30KB才拆分
-      maxSize: 0,  // 模块大小无上限，只要大于30KB都拆分
+      maxSize: 0,  // 模块大小无上限，只要大于30KB都拆分,如果设置一个小值，那么会拆分的很散，所以建议为0
       minChunks: 1, // 模块最少引用一次才会被拆分
       maxAsyncRequests: 5, // 异步加载时同时发送的请求数量最大不能超过5,超过5的部分不拆分
       maxInitialRequests: 3, // 页面初始化时同时发送的请求数量最大不能超过3,超过3的部分不拆分
