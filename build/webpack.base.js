@@ -78,7 +78,7 @@ module.exports = {
         new Webpack.IgnorePlugin(/\.\/locale/, /moment/)
     ],
     module: {
-        noParse: /jquery|bootstrap|moment/,
+        noParse: /jquery|bootstrap/,
         rules: [
             {
                 test: /\.css$/,
