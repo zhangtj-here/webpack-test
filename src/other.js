@@ -1,3 +1,11 @@
+import moment from 'moment'
+// 手动引入语言包
+import 'moment/locale/zh-cn'
+// 设置语言
+moment.locale('zh-CN')
+
+console.log(moment().subtract(6, 'days').calendar())
+
 // import './css/index.css';
 // import './less/test.less';
 // import './scss/test.scss';
@@ -6,23 +14,23 @@
 // $('body img').css('width', '300px').css('height', '300px')
 
 // 静态导入
-import $ from 'jquery'  //返回的其实就是一个promise对象
+// import $ from 'jquery'  //返回的其实就是一个promise对象
 // $(function() {
 // 	$('#btn').click(function() {
 // 		$('<div></div>').html('我是other').appendTo('body')
 // 	})
 // })	
-import 'bootstrap'
+// import 'bootstrap'
 
-window.onload = function() {
-	document.getElementById('btn').onclick = function() {
-		$('<div></div>').html('我是other').appendTo('body')
-	}
-}
+// window.onload = function() {
+// 	document.getElementById('btn').onclick = function() {
+// 		$('<div></div>').html('我是other').appendTo('body')
+// 	}
+// }
 
 
-import a from './a.js'
-console.log(a.name)
+// import a from './a.js'
+// console.log(a.name)
 /*if (true) {
 	import('jquery').then(({default: $}) => {
 		$(function() {
