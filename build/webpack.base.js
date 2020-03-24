@@ -6,16 +6,17 @@ const Webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
+    // optimization: {
+    //     splitChunks: {
+    //         chunks: 'all'
+    //     }
+    // },
     // 修改为多入口
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
-    },
-    entry: { //'./src/index.js',
+    entry: './src/other.js',
+    /*entry: { //'./src/index.js',
         index: "./src/index.js",
         other: "./src/other.js"
-    },
+    },*/
     output: {
         path: path.resolve("./dist"),
         // filename: 'main.js'
@@ -31,11 +32,11 @@ module.exports = {
             template: './src/index.html',
             // chunks: ['index','other']
         }),
-        new htmlWebpackPlugin({
-            filename: 'other.html',
-            template: './src/other.html',
-            // chunks: ['other']
-        }),
+        // new htmlWebpackPlugin({
+        //     filename: 'other.html',
+        //     template: './src/other.html',
+        //     // chunks: ['other']
+        // }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
          {
