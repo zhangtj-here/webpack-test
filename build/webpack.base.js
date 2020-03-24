@@ -77,6 +77,7 @@ module.exports = {
         })
     ],
     module: {
+        noParse: /jquery|bootstrap/,
         rules: [
             {
                 test: /\.css$/,
@@ -119,7 +120,8 @@ module.exports = {
                     ] 
                    } */
                 },
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                include: path.resolve(__dirname, '../src')
             },
             {
                test: /\.(htm|html)$/i,

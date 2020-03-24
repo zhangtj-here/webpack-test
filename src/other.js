@@ -12,6 +12,7 @@ import $ from 'jquery'  //返回的其实就是一个promise对象
 // 		$('<div></div>').html('我是other').appendTo('body')
 // 	})
 // })	
+import 'bootstrap'
 
 window.onload = function() {
 	document.getElementById('btn').onclick = function() {

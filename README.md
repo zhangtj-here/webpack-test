@@ -1117,12 +1117,26 @@ module.exports = {
 
 所以此时如果webpack再去解析他们的内部依赖关系，其实是非常浪费时间的，我们需要阻止webpack浪费精力去解析这些明知道没有依赖的库
 
-可以在webpack配置文件的`module`节点下加上`noParse`，并配置正则来确定不需要解析依赖关系的模块
+可以在webpack配置文件的`module`节点下加上`noParse`，并配置正则来确定不需要解析依赖关系的模块,使用babel-loader时，加上include,尽量少用loader来提升构建速度
 
 ```js
 module: {
 	noParse: /jquery|bootstrap/
 }
+{
+    test: /\.js/,
+    use: {
+       loader: "babel-loader",
+       /* options: {
+         presets: ["@babel/env"],
+         plugins: [
+            "@babel/plugin-proposal-class-properties"
+        ] 
+       } */
+    },
+    exclude: /node_modules/,
+    include: path.resolve(__dirname, '../src')
+},
 ```
 
 ## IgnorePlugin
