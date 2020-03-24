@@ -1,7 +1,7 @@
 import './css/index.css';
 import './less/test.less';
 import './scss/test.scss';
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
+// import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '@babel/polyfill';
 
 

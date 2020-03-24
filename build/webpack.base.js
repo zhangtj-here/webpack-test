@@ -52,17 +52,17 @@ module.exports = {
             {
                 test: /\.css$/,
                 // loader: ['style-loader', 'css-loader']
-                use: [MiniCssExtractPlugin.loader,'css-loader']
+                use: [MiniCssExtractPlugin.loader,'css-loader', 'postcss-loader']
             },
             {
                 test: /\.less$/,
                 // loader: ['style-loader', 'css-loader', 'less-loader']
-                loader: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
+                loader: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'less-loader']
             },
             {
                 test: /\.s(a|c)ss$/,
                 // loader: ['style-loader', 'css-loader', 'sass-loader']
-                loader: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                loader: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
                 test: /\.(jpg|png|jpeg|bmp|gif)$/,
