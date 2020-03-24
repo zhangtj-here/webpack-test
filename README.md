@@ -1029,6 +1029,15 @@ webpack4默认是允许import语法动态导入的，但是需要babel的插件�
      ]
    }
    ```
+2.1. 低版本的浏览器需要添加配置兼容动态导入的功能
+  ```js
+  // src/main.js
+	import "core-js/modules/es.promise";
+	import "core-js/modules/es.array.iterator";
+
+	// ...
+
+  ```
 
 3. 将jQuery模块进行动态导入
 
