@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const homeComponent = {
-	template: "<h2>我是home页面</h2>"
+	template: "<h2>我是home页面嘿嘿嘿牛逼</h2>"
 }
 
 const newsComponent = {
@@ -13,7 +13,7 @@ const newsComponent = {
 
 
 const router = new VueRouter({
-	routers: [
+	routes: [
 		{
 			path: '/home',
 			component: homeComponent

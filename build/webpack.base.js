@@ -35,7 +35,7 @@ module.exports = {
     },
     // 修改为多入口
     entry: {
-      main: './src/main.react.js',
+      main: './src/main.js',
     },
     /*entry: { //'./src/index.js',
         index: "./src/index.js",
@@ -45,7 +45,7 @@ module.exports = {
         path: path.resolve("./dist"),
         // filename: 'main.js'
         // 多入口无法对应为一个出口，所以用[name]自动匹配入口名，并自动打包多个js
-        filename: '[name].bundle.js',
+        filename: '[name].[contenthash:10].bundle.js',
         publicPath: '/'
     },
     plugins: [
@@ -56,11 +56,11 @@ module.exports = {
             template: './src/index.html',
             // chunks: ['index','other']
         }),
-        new htmlWebpackPlugin({
-            filename: 'other.html',
-            template: './src/other.html',
-            // chunks: ['other']
-        }),
+        // new htmlWebpackPlugin({
+        //     filename: 'other.html',
+        //     template: './src/other.html',
+        //     // chunks: ['other']
+        // }),
         // new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
          {
@@ -82,8 +82,8 @@ module.exports = {
             manifest: path.resolve(__dirname, '../dist/manifest.json')
         }),
         new addAssetHtmlWebpackPlugin({
-            // filepath: path.resolve(__dirname, '../dist/vue_dll.js')
-            filepath: path.resolve(__dirname, '../dist/react_dll.js')
+            filepath: path.resolve(__dirname, '../dist/vue_dll.js')
+            // filepath: path.resolve(__dirname, '../dist/react_dll.js')
         }),
         // new HappyPack({
         //     loaders: ['babel-loader']
