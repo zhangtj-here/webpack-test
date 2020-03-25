@@ -1,10 +1,10 @@
-import moment from 'moment'
-// 手动引入语言包
-import 'moment/locale/zh-cn'
-// 设置语言
-moment.locale('zh-CN')
+// import moment from 'moment'
+// // 手动引入语言包
+// import 'moment/locale/zh-cn'
+// // 设置语言
+// moment.locale('zh-CN')
 
-console.log(moment().subtract(6, 'days').calendar())
+// console.log(moment().subtract(6, 'days').calendar())
 
 // import './css/index.css';
 // import './less/test.less';
@@ -42,21 +42,21 @@ console.log(moment().subtract(6, 'days').calendar())
 
 }*/
 
-// window.onload = function() {
-// 	document.getElementById('btn').onclick = function() {
-// 		getComponent().then(item => {
-// 			item.appendTo('body')
-// 		})
+window.onload = function() {
+	document.getElementById('btn').onclick = function() {
+		getComponent().then(item => {
+			item.appendTo('body')
+		})
 
-// 	}
-// }
+	}
+}
 
-// // 动态导入
-// function getComponent() {
-// 	return import('jquery').then(({default: $}) => {
-// 		return	$('<div></div>').html('我是other')
-// 	})
-// }
+// 动态导入
+function getComponent() {
+	return import(/* webpackPrefetch: true */'jquery').then(({default: $}) => {
+		return	$('<div></div>').html('我是other')
+	})
+}
 
 
 
