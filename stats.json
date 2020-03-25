@@ -1,0 +1,958 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.40.2",
+  "hash": "50dbdec74e4b0d9894c8",
+  "time": 1552,
+  "builtAt": 1585141330596,
+  "publicPath": "/",
+  "outputPath": "I:\\projectSource\\webpack-test\\dist",
+  "assetsByChunkName": {
+    "main": "main.a17a6317f3.bundle.js"
+  },
+  "assets": [
+    {
+      "name": "assets/02.jpg",
+      "size": 16984,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "images/02-77215f.jpg",
+      "size": 16984,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "index.html",
+      "size": 840,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "main.a17a6317f3.bundle.js",
+      "size": 1411,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "main.a17a6317f3.bundle.js.LICENSE.txt",
+      "size": 36,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "vue_dll.js",
+      "size": 148525,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.a17a6317f3.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.a17a6317f3.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 1719,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.a17a6317f3.bundle.js"
+      ],
+      "hash": "6f0c8390c9f981256d01",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "delegated 2 from dll-reference vue_dll",
+          "name": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+          "index": 1,
+          "index2": 1,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "issuerId": 3,
+          "issuerName": "./src/main.js",
+          "issuerPath": [
+            {
+              "id": 3,
+              "identifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "factory": 47,
+                "building": 730
+              }
+            }
+          ],
+          "profile": {
+            "factory": 67,
+            "building": 0,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 3,
+              "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "vue/dist/vue.js",
+              "loc": "2:0-34"
+            },
+            {
+              "moduleId": 3,
+              "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "type": "harmony import specifier",
+              "userRequest": "vue/dist/vue.js",
+              "loc": "5:0-3"
+            },
+            {
+              "moduleId": 3,
+              "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "type": "harmony import specifier",
+              "userRequest": "vue/dist/vue.js",
+              "loc": "21:4-7"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1
+        },
+        {
+          "id": 1,
+          "identifier": "delegated 6 from dll-reference vue_dll",
+          "name": "delegated ./node_modules/vue-router/dist/vue-router.esm.js from dll-reference vue_dll",
+          "index": 3,
+          "index2": 2,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "issuerId": 3,
+          "issuerName": "./src/main.js",
+          "issuerPath": [
+            {
+              "id": 3,
+              "identifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "factory": 47,
+                "building": 730
+              }
+            }
+          ],
+          "profile": {
+            "factory": 67,
+            "building": 0,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 3,
+              "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "vue-router",
+              "loc": "4:0-35"
+            },
+            {
+              "moduleId": 3,
+              "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "type": "harmony import specifier",
+              "userRequest": "vue-router",
+              "loc": "5:8-17"
+            },
+            {
+              "moduleId": 3,
+              "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "type": "harmony import specifier",
+              "userRequest": "vue-router",
+              "loc": "12:17-26"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1
+        },
+        {
+          "id": 2,
+          "identifier": "external \"vue_dll\"",
+          "name": "external \"vue_dll\"",
+          "index": 2,
+          "index2": 0,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "delegated 2 from dll-reference vue_dll",
+          "issuerId": 0,
+          "issuerName": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+          "issuerPath": [
+            {
+              "id": 3,
+              "identifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "factory": 47,
+                "building": 730
+              }
+            },
+            {
+              "id": 0,
+              "identifier": "delegated 2 from dll-reference vue_dll",
+              "name": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+              "profile": {
+                "factory": 67,
+                "building": 0,
+                "dependencies": 0
+              }
+            }
+          ],
+          "profile": {
+            "factory": 0,
+            "building": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "delegated 2 from dll-reference vue_dll",
+              "module": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+              "moduleName": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+              "type": "delegated source",
+              "userRequest": "dll-reference vue_dll"
+            },
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "delegated 6 from dll-reference vue_dll",
+              "module": "delegated ./node_modules/vue-router/dist/vue-router.esm.js from dll-reference vue_dll",
+              "moduleName": "delegated ./node_modules/vue-router/dist/vue-router.esm.js from dll-reference vue_dll",
+              "type": "delegated source",
+              "userRequest": "dll-reference vue_dll"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        },
+        {
+          "id": 3,
+          "identifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "name": "./src/main.js",
+          "index": 0,
+          "index2": 3,
+          "size": 1593,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 47,
+            "building": 730
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/main.js",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "// import Vue from 'vue'  // runtime-only 的vue包\nimport Vue from 'vue/dist/vue.js'; //完整版的vue\n\nimport VueRouter from 'vue-router';\nVue.use(VueRouter);\nvar homeComponent = {\n  template: \"<h2>我是home页面嘿嘿嘿牛逼</h2>\"\n};\nvar newsComponent = {\n  template: \"<h2>我是news页面</h2>\"\n};\nvar router = new VueRouter({\n  routes: [{\n    path: '/home',\n    component: homeComponent\n  }, {\n    path: '/news',\n    component: newsComponent\n  }]\n});\nnew Vue({\n  el: '#app',\n  data: {\n    msg: 'hello world'\n  },\n  router: router\n});\n/*console.log('this is main.js')\r\n\r\n// import $ from 'jquery'\r\n\r\n$('body').css('background', 'red')\r\nconsole.log($, jQuery)\r\n// console.log(window.$)\r\n\r\nimport {getUserInfo} from './api/http.js'\r\ngetUserInfo().then((result) => {console.log(result)},(error) => {\r\n\tconsole.log(error)\r\n})\r\n\r\nconsole.log(test,test2,IS_DEV)*/\n// import str from './hotModule.js' \n// console.log(str)\n// if (module.hot) {\n// \tmodule.hot.accept('./hotModule.js', function() {\n// \t\t// 当hotModule模块内容被更新时触发\n// \t\tvar hotModule = require('./hotModule.js')\n// \t\tconsole.log(hotModule)\n// \t\tconsole.log('hotModule被更新了')\n// \t})\n// }\n// let math = require('./math.js') // 动态导入，可以在块级作用域中导入\n// console.log(math);\n// import {add} from './math.js' // 只能在顶级作用域中导入\n// console.log(add(1, 2))\n// let a = 1\n// let b = 2\n// let c = 3\n// console.log(a + b + c)\n// console.log(a, b, c)\n// import {a, b, c} from './constant.js'\n// 类似于预执行，将结果推断后放到这里\n// console.log(a + b + c)"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/main.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "delegated 2 from dll-reference vue_dll",
+      "name": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+      "index": 1,
+      "index2": 1,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+      "issuerId": 3,
+      "issuerName": "./src/main.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "factory": 47,
+            "building": 730
+          }
+        }
+      ],
+      "profile": {
+        "factory": 67,
+        "building": 0,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 3,
+          "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "vue/dist/vue.js",
+          "loc": "2:0-34"
+        },
+        {
+          "moduleId": 3,
+          "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "type": "harmony import specifier",
+          "userRequest": "vue/dist/vue.js",
+          "loc": "5:0-3"
+        },
+        {
+          "moduleId": 3,
+          "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "type": "harmony import specifier",
+          "userRequest": "vue/dist/vue.js",
+          "loc": "21:4-7"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 1,
+      "identifier": "delegated 6 from dll-reference vue_dll",
+      "name": "delegated ./node_modules/vue-router/dist/vue-router.esm.js from dll-reference vue_dll",
+      "index": 3,
+      "index2": 2,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+      "issuerId": 3,
+      "issuerName": "./src/main.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "factory": 47,
+            "building": 730
+          }
+        }
+      ],
+      "profile": {
+        "factory": 67,
+        "building": 0,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 3,
+          "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "vue-router",
+          "loc": "4:0-35"
+        },
+        {
+          "moduleId": 3,
+          "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "type": "harmony import specifier",
+          "userRequest": "vue-router",
+          "loc": "5:8-17"
+        },
+        {
+          "moduleId": 3,
+          "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "type": "harmony import specifier",
+          "userRequest": "vue-router",
+          "loc": "12:17-26"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 2,
+      "identifier": "external \"vue_dll\"",
+      "name": "external \"vue_dll\"",
+      "index": 2,
+      "index2": 0,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "delegated 2 from dll-reference vue_dll",
+      "issuerId": 0,
+      "issuerName": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "factory": 47,
+            "building": 730
+          }
+        },
+        {
+          "id": 0,
+          "identifier": "delegated 2 from dll-reference vue_dll",
+          "name": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+          "profile": {
+            "factory": 67,
+            "building": 0,
+            "dependencies": 0
+          }
+        }
+      ],
+      "profile": {
+        "factory": 0,
+        "building": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "delegated 2 from dll-reference vue_dll",
+          "module": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+          "moduleName": "delegated ./node_modules/vue/dist/vue.js from dll-reference vue_dll",
+          "type": "delegated source",
+          "userRequest": "dll-reference vue_dll"
+        },
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "delegated 6 from dll-reference vue_dll",
+          "module": "delegated ./node_modules/vue-router/dist/vue-router.esm.js from dll-reference vue_dll",
+          "moduleName": "delegated ./node_modules/vue-router/dist/vue-router.esm.js from dll-reference vue_dll",
+          "type": "delegated source",
+          "userRequest": "dll-reference vue_dll"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 3,
+      "identifier": "I:\\projectSource\\webpack-test\\node_modules\\babel-loader\\lib\\index.js!I:\\projectSource\\webpack-test\\src\\main.js",
+      "name": "./src/main.js",
+      "index": 0,
+      "index2": 3,
+      "size": 1593,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 47,
+        "building": 730
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/main.js",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is an entry point"
+      ],
+      "depth": 0,
+      "source": "// import Vue from 'vue'  // runtime-only 的vue包\nimport Vue from 'vue/dist/vue.js'; //完整版的vue\n\nimport VueRouter from 'vue-router';\nVue.use(VueRouter);\nvar homeComponent = {\n  template: \"<h2>我是home页面嘿嘿嘿牛逼</h2>\"\n};\nvar newsComponent = {\n  template: \"<h2>我是news页面</h2>\"\n};\nvar router = new VueRouter({\n  routes: [{\n    path: '/home',\n    component: homeComponent\n  }, {\n    path: '/news',\n    component: newsComponent\n  }]\n});\nnew Vue({\n  el: '#app',\n  data: {\n    msg: 'hello world'\n  },\n  router: router\n});\n/*console.log('this is main.js')\r\n\r\n// import $ from 'jquery'\r\n\r\n$('body').css('background', 'red')\r\nconsole.log($, jQuery)\r\n// console.log(window.$)\r\n\r\nimport {getUserInfo} from './api/http.js'\r\ngetUserInfo().then((result) => {console.log(result)},(error) => {\r\n\tconsole.log(error)\r\n})\r\n\r\nconsole.log(test,test2,IS_DEV)*/\n// import str from './hotModule.js' \n// console.log(str)\n// if (module.hot) {\n// \tmodule.hot.accept('./hotModule.js', function() {\n// \t\t// 当hotModule模块内容被更新时触发\n// \t\tvar hotModule = require('./hotModule.js')\n// \t\tconsole.log(hotModule)\n// \t\tconsole.log('hotModule被更新了')\n// \t})\n// }\n// let math = require('./math.js') // 动态导入，可以在块级作用域中导入\n// console.log(math);\n// import {add} from './math.js' // 只能在顶级作用域中导入\n// console.log(add(1, 2))\n// let a = 1\n// let b = 2\n// let c = 3\n// console.log(a + b + c)\n// console.log(a, b, c)\n// import {a, b, c} from './constant.js'\n// 类似于预执行，将结果推断后放到这里\n// console.log(a + b + c)"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "I:\\projectSource\\webpack-test\\dist",
+      "assetsByChunkName": {},
+      "assets": [
+        {
+          "name": "images/02-77215f.jpg",
+          "size": 16984,
+          "chunks": [],
+          "chunkNames": [],
+          "info": {},
+          "emitted": true
+        },
+        {
+          "name": "index.html",
+          "size": 4700,
+          "chunks": [
+            0
+          ],
+          "chunkNames": [],
+          "info": {},
+          "emitted": false
+        }
+      ],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "undefined": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "index.html"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "undefined": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "index.html"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 893,
+          "names": [],
+          "files": [
+            "index.html"
+          ],
+          "hash": "bd026d03ad7a410bbb27",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": 0,
+              "identifier": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\node_modules\\html-withimg-loader\\index.js!I:\\projectSource\\webpack-test\\src\\index.html",
+              "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+              "index": 0,
+              "index2": 1,
+              "size": 827,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 88,
+                "building": 696
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\src\\index.html"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source": "module.exports = \"<!DOCTYPE html>\\r<html lang=\\\"en\\\">\\r<head>\\r    <meta charset=\\\"UTF-8\\\">\\r    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"ie=edge\\\">\\r    <title>webpackdemo</title>\\r</head>\\r<body>\\r    <!-- <ul>\\r        <li>1 <i class=\\\"glyphicon glyphicon-plus\\\"></i></li>\\r        <li>2</li>\\r        <li>3</li>\\r        <li>4</li>\\r        <li>5</li>\\r    </ul>\\r    <img src=\"+JSON.stringify(require(\"../assets/02.jpg\"))+\" alt=\\\"\\\"> -->\\r    <div id=\\\"app\\\">\\r        <h1  v-text=\\\"msg\\\"></h1>\\r        <router-link to=\\\"/home\\\">去首页</router-link>\\r        <router-link to=\\\"/news\\\">去新闻</router-link>\\r        <router-view></router-view>\\r    </div>\\r    <button id='btn'>点我，添加一个div</button>\\r</body>\\r</html>\""
+            },
+            {
+              "id": 1,
+              "identifier": "I:\\projectSource\\webpack-test\\node_modules\\url-loader\\dist\\cjs.js??ref--7!I:\\projectSource\\webpack-test\\assets\\02.jpg",
+              "name": "./assets/02.jpg",
+              "index": 1,
+              "index2": 0,
+              "size": 66,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\node_modules\\html-withimg-loader\\index.js!I:\\projectSource\\webpack-test\\src\\index.html",
+              "issuerId": 0,
+              "issuerName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+              "issuerPath": [
+                {
+                  "id": 0,
+                  "identifier": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\node_modules\\html-withimg-loader\\index.js!I:\\projectSource\\webpack-test\\src\\index.html",
+                  "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+                  "profile": {
+                    "factory": 88,
+                    "building": 696
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 46,
+                "building": 68
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+                "images/02-77215f.jpg"
+              ],
+              "reasons": [
+                {
+                  "moduleId": 0,
+                  "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\node_modules\\html-withimg-loader\\index.js!I:\\projectSource\\webpack-test\\src\\index.html",
+                  "module": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+                  "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+                  "type": "cjs require",
+                  "userRequest": "../assets/02.jpg",
+                  "loc": "1:484-511"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source": "module.exports = __webpack_public_path__ + \"images/02-77215f.jpg\";"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "",
+              "request": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\src\\index.html",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\node_modules\\html-withimg-loader\\index.js!I:\\projectSource\\webpack-test\\src\\index.html",
+          "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+          "index": 0,
+          "index2": 1,
+          "size": 827,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 88,
+            "building": 696
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\src\\index.html"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": "module.exports = \"<!DOCTYPE html>\\r<html lang=\\\"en\\\">\\r<head>\\r    <meta charset=\\\"UTF-8\\\">\\r    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"ie=edge\\\">\\r    <title>webpackdemo</title>\\r</head>\\r<body>\\r    <!-- <ul>\\r        <li>1 <i class=\\\"glyphicon glyphicon-plus\\\"></i></li>\\r        <li>2</li>\\r        <li>3</li>\\r        <li>4</li>\\r        <li>5</li>\\r    </ul>\\r    <img src=\"+JSON.stringify(require(\"../assets/02.jpg\"))+\" alt=\\\"\\\"> -->\\r    <div id=\\\"app\\\">\\r        <h1  v-text=\\\"msg\\\"></h1>\\r        <router-link to=\\\"/home\\\">去首页</router-link>\\r        <router-link to=\\\"/news\\\">去新闻</router-link>\\r        <router-view></router-view>\\r    </div>\\r    <button id='btn'>点我，添加一个div</button>\\r</body>\\r</html>\""
+        },
+        {
+          "id": 1,
+          "identifier": "I:\\projectSource\\webpack-test\\node_modules\\url-loader\\dist\\cjs.js??ref--7!I:\\projectSource\\webpack-test\\assets\\02.jpg",
+          "name": "./assets/02.jpg",
+          "index": 1,
+          "index2": 0,
+          "size": 66,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\node_modules\\html-withimg-loader\\index.js!I:\\projectSource\\webpack-test\\src\\index.html",
+          "issuerId": 0,
+          "issuerName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\node_modules\\html-withimg-loader\\index.js!I:\\projectSource\\webpack-test\\src\\index.html",
+              "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+              "profile": {
+                "factory": 88,
+                "building": 696
+              }
+            }
+          ],
+          "profile": {
+            "factory": 46,
+            "building": 68
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+            "images/02-77215f.jpg"
+          ],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "I:\\projectSource\\webpack-test\\node_modules\\html-webpack-plugin\\lib\\loader.js!I:\\projectSource\\webpack-test\\node_modules\\html-withimg-loader\\index.js!I:\\projectSource\\webpack-test\\src\\index.html",
+              "module": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+              "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
+              "type": "cjs require",
+              "userRequest": "../assets/02.jpg",
+              "loc": "1:484-511"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "module.exports = __webpack_public_path__ + \"images/02-77215f.jpg\";"
+        }
+      ],
+      "filteredModules": 0,
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "html-webpack-plugin for \"index.html\""
+    }
+  ]
+}

@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config ./build/webpack.prod.js",
+    "build:analyse": "webpack --profile --json > stats.json --config ./build/webpack.prod.js",
+    "build:analysis": "webpack --config ./build/webpack.analysis.js",
     "dev-build": "webpack --config ./build/webpack.dev.js",
     "build:vue": "webpack --config ./build/webpack.vue.js",
     "build:react": "webpack --config ./build/webpack.react.js",
@@ -44,6 +46,7 @@
     "terser-webpack-plugin": "^2.3.5",
     "url-loader": "^2.1.0",
     "webpack": "^4.40.2",
+    "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1",
     "webpack-merge": "^4.2.2"
