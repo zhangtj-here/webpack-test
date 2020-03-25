@@ -4,6 +4,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const Webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const addAssetHtmlWebpackPlugin = require('add-asset-html-webpack-plugin') 
 
 module.exports = {
     optimization: {
@@ -33,7 +34,7 @@ module.exports = {
     },
     // 修改为多入口
     entry: {
-      main: './src/main.js',
+      main: './src/main.react.js',
     },
     /*entry: { //'./src/index.js',
         index: "./src/index.js",
@@ -54,11 +55,11 @@ module.exports = {
             template: './src/index.html',
             // chunks: ['index','other']
         }),
-        // new htmlWebpackPlugin({
-        //     filename: 'other.html',
-        //     template: './src/other.html',
-        //     // chunks: ['other']
-        // }),
+        new htmlWebpackPlugin({
+            filename: 'other.html',
+            template: './src/other.html',
+            // chunks: ['other']
+        }),
         // new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
          {
@@ -75,7 +76,14 @@ module.exports = {
             // placeholders
             filename: '[name]-[hash:6].css'
         }),
-        new Webpack.IgnorePlugin(/\.\/locale/, /moment/)
+        new Webpack.IgnorePlugin(/\.\/locale/, /moment/),
+        new Webpack.DllReferencePlugin({
+            manifest: path.resolve(__dirname, '../dist/manifest.json')
+        }),
+        new addAssetHtmlWebpackPlugin({
+            // filepath: path.resolve(__dirname, '../dist/vue_dll.js')
+            filepath: path.resolve(__dirname, '../dist/react_dll.js')
+        })
     ],
     module: {
         noParse: /jquery|bootstrap/,

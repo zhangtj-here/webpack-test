@@ -7,9 +7,9 @@ const webpack = require('webpack')
 module.exports = {
 	mode: 'production',
 	entry: {
-		vue: [
-			'vue/dist/vue.js', // 如果不写全，默认采用的vue.esm.js  
-			'vue-router'
+		react: [
+			'react', // 如果不写全，默认采用的vue.esm.js  
+			'react-dom'
 		]
 	},
 	output: {
