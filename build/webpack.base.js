@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const Webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const addAssetHtmlWebpackPlugin = require('add-asset-html-webpack-plugin') 
+const HappyPack = require('happypack')
 
 module.exports = {
     optimization: {
@@ -83,7 +84,10 @@ module.exports = {
         new addAssetHtmlWebpackPlugin({
             // filepath: path.resolve(__dirname, '../dist/vue_dll.js')
             filepath: path.resolve(__dirname, '../dist/react_dll.js')
-        })
+        }),
+        // new HappyPack({
+        //     loaders: ['babel-loader']
+        // })
     ],
     module: {
         noParse: /jquery|bootstrap/,
@@ -122,6 +126,7 @@ module.exports = {
                 test: /\.js/,
                 use: {
                    loader: "babel-loader",
+                   // loader: "HappyPack/loader",
                    /* options: {
                      presets: ["@babel/env"],
                      plugins: [
