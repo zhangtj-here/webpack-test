@@ -33,7 +33,7 @@ module.exports = {
     },
     // 修改为多入口
     entry: {
-      other: './src/other.js',
+      main: './src/main.js',
     },
     /*entry: { //'./src/index.js',
         index: "./src/index.js",
@@ -59,7 +59,7 @@ module.exports = {
         //     template: './src/other.html',
         //     // chunks: ['other']
         // }),
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
          {
            from: path.resolve('assets'),
